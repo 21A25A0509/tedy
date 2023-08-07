@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #121010;
+  }
+  .teddy {
+    position: relative;
+  }
+  .teddy-face {
+    width: 200px;
+    height: 200px;
+    background-color: #d4a185;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .ear {
+    width: 60px;
+    height: 100px;
+    background-color: #d4a185;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .left-ear {
+    top: -30px;
+    left: -20px;
+  }
+  
+  .right-ear {
+    top: -30px;
+    right: -20px;
+  }
+  
+  .head {
+    width: 120px;
+    height: 120px;
+    background-color: #f0c8a0;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  
+  .eye {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .left-eye {
+    top: 20px;
+    left: 10px;
+  }
+  
+  .right-eye {
+    top: 20px;
+    right: 10px;
+  }
+  
+  .nose {
+    width: 20px;
+    height: 20px;
+    background-color: #d4a185;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+  }
+  
+  .mouth {
+    width: 40px;
+    height: 20px;
+    background-color: #7f7f7f;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+  }
+  .neck {
+    width: 150px;
+    height: 300px;
+    background-color: #d4a185;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left:10px;
+  }
+  
+
+.left-hand,
+.right-hand {
+  width: 40px;
+  height: 120px;
+  background-color: #d4a185;
+  position: absolute;
+  top: 240px;
+  border-radius: 10px;
+  transform-origin: top center;
+}
+
+.left-hand {
+  left: 150px;
+  transform: rotate(-20deg);
+  animation: wave 2s infinite;
+}
+
+.right-hand {
+  right: 150px;
+  transform: rotate(20deg);
+  animation: wave 2s infinite 0.5s;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+}
+  .left-leg,
+  .right-leg {
+    width: 30px;
+    height: 100px;
+    background-color: #d4a185;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+  }
+  
+  .left-leg {
+    top:500px;
+    left:100px;
+  }
+  
+  .right-leg {
+    top:500px;
+    right:150px;
+  }
+  .teddy {
+    animation: colorChange 5s infinite alternate;
+  }
+  
